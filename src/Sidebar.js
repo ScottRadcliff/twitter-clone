@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import avatar from './avatar.jpg'
 
 class Sidebar extends Component {
   
@@ -6,6 +7,7 @@ class Sidebar extends Component {
     return (
       <div className="sidebar">
         <div className="sidebar__user-profile">
+          <img src={avatar} />
         </div>
       </div>
     );

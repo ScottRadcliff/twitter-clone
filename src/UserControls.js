@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import avatar from './avatar.jpg';
 
 class UserControls extends Component {
   render() {
@@ -8,7 +9,7 @@ class UserControls extends Component {
           <input type="search" placeholder="search" className="user-controls__search-form--input-search" />
         </form>
 
-        <img src="images/avatar.jpg" className="user-controls__avatar-image" />
+        <img src={avatar} className="user-controls__avatar-image" />
 
         <a href="#" className="user-controls__tweet-link">Tweet</a>
       </div>

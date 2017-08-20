@@ -11,7 +11,7 @@ class App extends Component {
       <header>
         <Nav />
         <UserControls />
-        <div className="container">
+        <div className="tweet-container">
           <Sidebar />
         </div>
       </header>

@@ -55,3 +55,30 @@ header > nav > a {
   float: right;
   margin: -9px 4px 0 0;
 }
+
+/* Main Container */
+.tweet-container {
+  margin: 50px 0 0 0;
+}
+
+.sidebar {
+  width: 200px;
+  float: left;
+}
+
+.sidebar__user-profile {
+  background: #ccc;
+  height: 300px;
+}
+
+.sidebar__user-profile > img {
+  width: 100px;
+  border-radius: 54px;
+  margin: 110px 0 0 0;
+}
+
+
+
+
+
+
