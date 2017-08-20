@@ -2,7 +2,15 @@ import React, { Component } from 'react';
 import avatar from './avatar.jpg'
 
 class Sidebar extends Component {
-  
+  constructor(props) {
+    super(props);
+    this.state = {
+      tweets: this.props.tweets,
+      following: this.props.following,
+      followers: this.props.followers
+    }
+  }
+
   render() {
     return (
       <div className="sidebar">
@@ -12,9 +20,9 @@ class Sidebar extends Component {
             <p>Scott Radcliff<br/>
             @scottradcliff</p>
             <div className="user-stats">
-              <div>Tweets <br/> {this.props.tweets}</div>
-              <div>Following <br/> {this.props.following}</div>
-              <div>Followers <br/> {this.props.followers}</div>
+              <div>Tweets <br/> {this.state.tweets}</div>
+              <div>Following <br/> {this.state.following}</div>
+              <div>Followers <br/> {this.state.followers}</div>
             </div>
           </div>
         </div>

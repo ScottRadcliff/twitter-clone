@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Nav from './Nav.js';
 import UserControls from './UserControls.js';
 import Sidebar from './Sidebar.js';
+import data from './data.json';
 import './App.css';
-
 
 class App extends Component {
   render() {
@@ -13,14 +13,13 @@ class App extends Component {
         <UserControls />
         <div className="tweet-container">
           <Sidebar 
-            tweets={3000}
-            following={1200}
-            followers={1500}
+            tweets={data.tweets}
+            following={data.following}
+            followers={data.followers}
           />
         </div>
       </header>
     );
   }
 }
-
 export default App;
