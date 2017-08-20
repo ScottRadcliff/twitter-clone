@@ -1,5 +1,57 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: helvetica;
+  color: #14171a;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+header {
+  background: #e6ecf0;
+  height: 40px;
+  display: block;
+}
+
+header > nav > a {
+  padding-right: 30px;
+  position: relative;
+  top: 7px;
+  left: 13px;
+  color: #14171a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.user-controls {
+  width: 280px;
+  float: right;
+}
+
+.user-controls__search-form {
+  display: inline;
+  float: left;
+  margin: -9px 20px;
+} 
+
+.user-controls__search-form--input-search {
+  border-radius: 9px;
+  padding: 4px;
+  border: none;
+}
+
+.user-controls__avatar-image {
+  width: 30px;
+  height: 30px;
+  margin: -13px 30px 0 0;
+  border-radius: 10px;
+}
+
+.user-controls__tweet-link {
+  float: right;
+  margin: -9px 4px 0 0;
 }
