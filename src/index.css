@@ -66,19 +66,36 @@ header > nav > a {
   float: left;
 }
 
-.sidebar__user-profile {
+.sidebar > .user-profile {
   background: #ccc;
   height: 300px;
 }
 
-.sidebar__user-profile > img {
-  width: 100px;
+.sidebar > .user-profile > img {
+  width: 80px;
   border-radius: 54px;
   margin: 110px 0 0 0;
 }
 
+.user-profile .user-details {
+  position: relative;
+  top: -73px;
+  left: 91px;
+}
+
+.user-profile .user-stats {
+  display: block;
+  position: absolute;
+  left: -80px;
+  top: 66px;
+  font-size: 14px;
+}
 
 
+.user-profile .user-stats span {
+  padding: 0 10px 0 0;
+}
 
-
-
+.user-profile .user-stats div {
+  float: left;
+} 

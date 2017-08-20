@@ -12,7 +12,11 @@ class App extends Component {
         <Nav />
         <UserControls />
         <div className="tweet-container">
-          <Sidebar />
+          <Sidebar 
+            tweets={3000}
+            following={1200}
+            followers={1500}
+          />
         </div>
       </header>
     );
