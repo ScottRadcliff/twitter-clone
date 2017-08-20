@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './Nav.js';
 import UserControls from './UserControls.js';
+import Sidebar from './Sidebar.js';
 import './App.css';
 
 
