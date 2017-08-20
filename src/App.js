@@ -16,6 +16,7 @@ class App extends Component {
             tweets={data.tweets}
             following={data.following}
             followers={data.followers}
+            trends={data.trends}
           />
         </div>
       </header>

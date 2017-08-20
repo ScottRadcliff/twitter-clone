@@ -1,1 +1,6 @@
-{"tweets": 1000, "following": 1200, "followers": 1500}
+{
+  "tweets": 1000, 
+  "following": 1200, 
+  "followers": 1500,
+  "trends": ["#NationalRadioDay", "#SundayFunday", "#Spurs" ,"#TimeToSpeak"]
+}

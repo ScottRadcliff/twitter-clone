@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import avatar from './avatar.jpg'
+import TrendTopic from './trendTopic.js'
 
 class Sidebar extends Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="sidebar">
-        <div className="user-profile">
+        <div className="sidebar-box">
           <img src={avatar} />
           <div className="user-details">
             <p>Scott Radcliff<br/>
@@ -25,6 +26,14 @@ class Sidebar extends Component {
               <div>Followers <br/> {this.state.followers}</div>
             </div>
           </div>
+        </div>
+
+        <div className="sidebar-box">
+          <div className="trends">
+            <p>Trends</p>
+            <ul>{this.props.trends.map(function(item) { return <TrendTopic trend={item}/> })}</ul>
+          </div>
+
         </div>
       </div>
     );
